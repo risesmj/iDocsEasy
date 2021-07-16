@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/document_navigation"
+    app:startDestination="@id/destination_pin">
+
+    <!-- PIN de segurança -->
+    <fragment
+        android:id="@+id/destination_pin"
+        android:name="risesmj.com.br.mydoceasy.ui.fragments.PinFragment"
+        android:label=""
+        tools:layout="@layout/fragment_pin" >
+        <action
+            android:id="@+id/action_pinFragment_to_main"
+            app:destination="@id/destination_main" />
+    </fragment>
+
+    <!-- Lista de Documentos -->
+    <fragment
+        android:id="@+id/destination_main"
+        android:name="risesmj.com.br.mydoceasy.ui.fragments.MainFragment"
+        android:label="@string/documentos"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_main_to_viewDocumentFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_out_right"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:destination="@id/destination_update" />
+    </fragment>
+
+
+    <!-- Atualização do documento -->
+    <fragment
+        android:id="@+id/destination_update"
+        android:name="risesmj.com.br.mydoceasy.ui.fragments.UpdateDocumentFragment"
+        android:label="@string/atualizar"
+        tools:layout="@layout/fragment_update_document" >
+
+        <argument
+            android:name="documentPersonal"
+            app:argType="risesmj.com.br.mydoceasy.data.model.DocumentPersonal"
+            android:defaultValue="@null"/>
+
+        <action
+            android:id="@+id/destination_update"
+            app:destination="@id/destination_main" />
+    </fragment>
+
+</navigation>

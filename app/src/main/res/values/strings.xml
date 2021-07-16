@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">iDocsPer</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="meus">Você</string>
+    <string name="mae">Mãe</string>
+    <string name="pai">Pai</string>
+    <string name="data_de_envio">Data de Envio:</string>
+    <string name="arquivo">Arquivo:</string>
+    <string name="excluir">Excluir</string>
+    <string name="enviar">Enviar</string>
+    <string name="observacoes">Observações</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pin_de_acesso">PIN de acesso</string>
+    <string name="pin">PIN</string>
+    <string name="documentos">Documentos</string>
+    <string name="atualizar">Atualizar</string>
+</resources>

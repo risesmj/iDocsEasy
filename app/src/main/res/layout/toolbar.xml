@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/appBarLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="0dp"
+    app:elevation="0dp"
+    android:showDividers="none"
+    android:theme="@style/Theme.MyDocEasy.AppBarOverlay">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_cans_condensed_light"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+        android:textColor="@color/orangePrimary" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textAlignment="center"
+        app:layout_collapseMode="pin"
+        app:titleTextColor="@color/orangePrimary"></androidx.appcompat.widget.Toolbar>
+
+
+</com.google.android.material.appbar.AppBarLayout>
+
