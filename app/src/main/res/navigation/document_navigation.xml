@@ -29,6 +29,9 @@
             app:popEnterAnim="@android:anim/slide_out_right"
             app:popExitAnim="@android:anim/slide_out_right"
             app:destination="@id/destination_update" />
+        <action
+            android:id="@+id/action_destination_main_to_settingsFragment"
+            app:destination="@id/destination_setting" />
     </fragment>
 
 
@@ -48,5 +51,9 @@
             android:id="@+id/destination_update"
             app:destination="@id/destination_main" />
     </fragment>
+    <fragment
+        android:id="@+id/destination_setting"
+        android:name="risesmj.com.br.mydoceasy.ui.fragments.SettingsFragment"
+        android:label="Configurações" />
 
 </navigation>

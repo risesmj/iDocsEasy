@@ -29,7 +29,7 @@ class DocumentListAdapter(private val dataSet: List<DocumentPersonal>) :
         viewHolder.icon.setImageResource(dataSet[position].icon)
 
         viewHolder.itemView.setOnClickListener{
-            (it.context as MainActivity).openView(dataSet[position]) }
+            (it.context as MainActivity).openUpdate(dataSet[position]) }
     }
 
     override fun getItemCount() = dataSet.size
