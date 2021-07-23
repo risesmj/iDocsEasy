@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <integer name="field_size_pin">6</integer>
+    <integer name="schema_version_realm">1</integer>
 </resources>
